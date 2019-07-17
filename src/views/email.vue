@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="email">
      <button @click="handleClick">按钮</button>
     <router-view/>
   </div>
@@ -10,7 +10,7 @@
 export default {
   methods: {
    handleClick () {
-     this.$emit('on-click', 'hello' )
+     this.$bus.$emit('on-click', 'hello' )
    }
   },
  mounted (){
@@ -18,3 +18,8 @@ export default {
  }
 }
 </script>
+<style  scoped>
+.email{
+   border: 1px solid green
+}
+</style>

@@ -1,4 +1,4 @@
-const mutation={
+const mutations={
 
 }
-export default mutation
+export default mutations
