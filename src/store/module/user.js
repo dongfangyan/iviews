@@ -7,15 +7,20 @@ const getters={
   }
 }
 const mutations={
- //
+ SET_USER_NAME (state, params) {
+    state.userName = params
+ }
 }
 const actions={
 
 }
 export default{
-  namespaced: true,
+
   getters,
   state,
   mutations,
-  actions
+  actions,
+  modules: {
+
+  }
 }
